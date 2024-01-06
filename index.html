@@ -3,50 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detona Ralph</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./src/styles/reset.css">
-<link rel="stylesheet" href="./src/styles/main.css">
+    <title>jogo da memoria</title>
+    <link rel="stylesheet" href="./src/style/reset.css">
+    <link rel="stylesheet" href="./src/style/main.css">
 </head>
 <body>
     <div class="container">
-        <div class="menu">
-            <div class="menu-time">
-                <h2 style="color: red;">Time left</h2>
-                <h2 id="time-lefl" class="espaço">0</h2>
-            </div>
-            <div class="menu-score">
-                <h2 style="color: red;">your Score</h2>
-                <h2 id="score" class="espaço">0</h2>
-            </div>
-            <div class="menu-lives">
-                <img src="./src/img/player.png" alt="rosto do jogador" height="60px">
-                <h2>x3</h2>
-            </div>
-        </div>
-        <div class="panel">
-            <div class="panel-row">
-                <div class="square" id="1"></div>
-                <div class="square enemy" id="2"></div>
-                <div class="square" id="3"></div>
-            </div>
-
-            <div class="panel-row">
-                <div class="square enemy" id="4"></div>
-                <div class="square" id="5"></div>
-                <div class="square" id="6"></div>
-            </div>
-
-            <div class="panel-row">
-                <div class="square" id="7"></div>
-                <div class="square" id="8"></div>
-                <div class="square " id="9"></div>
-            </div>
-        </div>
-        
+        <h2>jogo da memoria</h2>
+        <div class="game"></div>
+        <button class="reset" onclick="window.location.reload()">Reset Game</button>
     </div>
-    <script src="./src/scripts/engine.js"></script>
+    <script src="./src/script/engine.js" defer></script>
 </body>
 </html>
